@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Condutor</legend>
+            <label for="nome">Nome do Proprietário:</label>
+            <input type="text" id="nome" name="nome" required>
+            <p> </p>
+
+            <label for="cnh">CNH:</label>
+            <input type="text" id="cnh" name="cnh" required>
+            <P> </P>
+
+            <label for="data_cnh">Data de Emissão da CNH:</label>
+            <input type="date" id="data_cnh" name="data_cnh" required>
+            <p> </p>
+
+            <label for="estado_civil">Estado Civil:</label>
+            <br>
+            <input type="radio" id="solteiro" name="estado civil" value="solteiro">
+            <label for="solteiro">Solteiro</label>
+            <input type="radio" id="casado" name="estado_civil" value="casado">
+            <label for="casado">Casado</label>
+            <input type="radio" id="divorciado" name="estado_civil" value="divorciado">
+            <label for="divorciado">Divorciado</label>
+            <input type="radio" id="viuvo" name="estado_civil" value="viuvo">
+            <label for="viuvo">Viúvo</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Veículo</legend>
+            <label for="placa">Placa do Carro:</label>
+            <input type="text" id="placa" name="placa" size="7" placeholder="ABC-1234" required>
+            <p></p>
+            <label for="marca">Marca do Veículo:</label>
+            <select>
+                <option value="fiat">Fiat</option>
+                <option value="vw">VW</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="outro">Outro</option>
+            </select>
+            <p></p>
+            <label for="ano_modelo">Ano do Modelo:</label>
+            <input type="number" id="ano_modelo" name="ano_modelo" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Uso</legend>
+            <p></p>
+            <label for="uso">Usa o carro para trabalhar (Uber/Taxi)?</label>
+            <p> </p>
+            <input type="radio" id="sim" name="uso" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="uso" value="nao">
+            <label for="nao">Não</label>
+            <p></p>
+            <input type="checkbox" id="rastreador" name="rastreador" value="rastreador">
+            <label for="rastreador">Possui rastreador instalado</label>
+        </fieldset>
+        <p></p>
+        <button>Solicitar Cotação</button>
+    </form>
+</body>
+
+</html>
